@@ -1,7 +1,7 @@
 # How to Get Started With React and Vite
 *This is step by step instructions on how to set up and get started with the JavaScript library **React** and the frontend development tool **Vite**.*
 
-(InstructionsFinal/Pasted image 20241031014740.png)
+(/InstructionsFinal/Pasted image 20241031014740.png)
 ## Introduction
 ### Goals/Outcomes
 * Learn how to set up a Vite project that uses React.
