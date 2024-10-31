@@ -1,7 +1,7 @@
 # How to Get Started With React and Vite
 *This is step by step instructions on how to set up and get started with the JavaScript library **React** and the frontend development tool **Vite**.*
 
-![img](InstructionsFinal/120241031014740.png)
+![[School/Fall2024/Writing/InstructionsFinal/120241031014740.png]]
 ## Introduction
 ### Goals/Outcomes
 * Learn how to set up a Vite project that uses React.
@@ -63,19 +63,19 @@ This guide will be using TypeScript. TypeScript has become an industry standard.
 		1. `cd <project-name>` to change the directory to the project directory.
 		2. If not already in the Directory in VS Code, use  `code .` to open the directory in VS Code. The terminal may need to be reopened   (<kbd>Ctrl</kbd> + <kbd>`</kbd>)
 		3. `npm install` to install the necessary dependencies. This may take a few moments.
-		4. `npm run dev` to run the Vite template project locally. If everything was done properly, the terminal should look like the following screenshot:
-  		 ![img](InstructionsFinal/20241030230819.png)
-     
+		4. `npm run dev` to run the Vite template project locally. If everything was done properly, the terminal should look like the following screenshot: ![[School/Fall2024/Writing/InstructionsFinal/20241030230819.png]]
 			*  `npm run dev` runs the Vite dev tool. To stop it, enter the terminal it is running in and press (<kbd>ctrl</kbd> + <kbd>c</kbd>)
-	1. View the template project in the browser.
-		* View the project in browser by typing the `http://localhost:5173/` in the search bar, or by pressing (<kbd>ctrl</kbd> + <kbd>click</kbd>) on the link provided in the terminal. The browser should show a working page as shown in the following screen shot.
-![img](InstructionsFinal/20241030231603.png)
+	3. View the template project in the browser.
+		* View the project in browser by typing the `http://localhost:5173/` in the search bar, or by pressing (<kbd>ctrl</kbd> + <kbd>click</kbd>) on the link provided in the terminal. The browser should show a working page as shown in the following screen shot. 
+		
+		![[School/Fall2024/Writing/InstructionsFinal/20241030231603.png]]
 ### Step 2: File Structure
 *Note: Take time to explore the files in the project, this guide will not go into great depth on the existing file structure.*
 1. Create two new folders in `src` directory:
 	1. Create a "`components`" folder.
 	2. Create a "`pages`" folder.
-		![img](InstructionsFinal/FileStructure.png)
+	![[School/Fall2024/Writing/InstructionsFinal/FileStructure.png]]
+	
 *Note: To create a folder or file right click the desired parent directory and select "New Folder".* 
 ### Step 2.5: Remove previous Formatting (Optional)
 *Note: the Template has some default CSS styling that can be removed or edited *
@@ -90,8 +90,9 @@ This guide will be using TypeScript. TypeScript has become an industry standard.
 3. Navigate within the "FirstComponent" file, it should be completely empty. 
 4. Type `rafce` and enter. 
 	* This is a shortcut from the required extension. It means "React Arrow Function Export Component". 
-	* The resulting code should look like the following screenshot:
- ![img](InstructionsFinal/FirstComponentSS.png)
+	* The resulting code should look like the following screenshot: 
+	![[School/Fall2024/Writing/InstructionsFinal/FirstComponentSS.png]]
+	
 	* Special react syntax, which is known as JSX or TSX is used here. It looks a lot like HTML and may be used after `return` where the *div*s are. Note: The whole return needs to be wrapped in one tag, such as `<></>`, which is a special component for this purpose call a *React Fragment* or simply wrap with `<div></div>`. 
 5. Save, save with the keyboard shortcut (<kbd>ctrl</kbd> + <kbd> s </kbd>) . 
 ### Step 4: Making a Page
@@ -110,8 +111,9 @@ This guide will be using TypeScript. TypeScript has become an industry standard.
 	* After `return` write `<FirstComponent/>` 
 	* Any number of components may be used, but it requires them all to be wrapped in a single component. Use the React Fragment (`<> </>`) to do this. 
 	* JSX/TSX can be used in the pages the same way it can be used in the components.
-	* "FirstPage.tsx" file should look something like this:
-![img](InstructionsFinal/FirstComponentComplete.png)
+	* "FirstPage.tsx" file should look something like this: 
+	![[School/Fall2024/Writing/InstructionsFinal/FirstComponentComplete.png]]
+	
 ### Step 5: Displaying Pages on the Browser
 *Note: App.tsx follows the same rules as components and pages*
 1. Open App.tsx
@@ -120,8 +122,9 @@ This guide will be using TypeScript. TypeScript has become an industry standard.
 	* Delete everything in the `return` that is between the React Fragment
 	* Delete the React Hook ( `const [cont,setCount] = useState(0)`)
 	* Delete the imports at the top of the file
-	* After everything is deleted, it should look like the following image:
- ![img](InstructionsFinal/AppSS.png)
+	* After everything is deleted, it should look like the following image: 
+	![[School/Fall2024/Writing/InstructionsFinal/AppSS.png]]
+	
 3. Import Pages
 	* At the top of the file, write: 
 		`import FirstPage from "./pages/FirstPage";`
@@ -129,7 +132,8 @@ This guide will be using TypeScript. TypeScript has become an industry standard.
 	* Any number of pages may be used, but it requires them all to be wrapped in a single component. Use the React Fragment (`<> </>`) to do this. 
 	* JSX/TSX can be used in the pages the same way it can be used in the components and pages. 
 5. Save. Open the browser from before or reopen the url, the single page application should be completed:
-   ![img](InstructionsFinal/SinglePageComplete.png)
+![[School/Fall2024/Writing/InstructionsFinal/SinglePageComplete.png]]
+
 
 ## Instructions Part 2: Multiple Page Application
 *There are many ways to navigate between pages with react. This will be showing the current recommended method*
@@ -140,39 +144,47 @@ This guide will be using TypeScript. TypeScript has become an industry standard.
 1. Follow Part 1, Step 3 to make "MenuComponent.tsx". 
 2. import {Link} from 'react-router-dom' at the top of the page
 3. follow the template provided in the following image:
-   ![img](InstructionsFinal/MenuComponent.png)
+![[School/Fall2024/Writing/InstructionsFinal/MenuComponent.png]]
+
 	* This is defining Routes to different URLs, but nothing will be there, yet. 
-5. The first page will be a landing page with out a navbar, so for convenience, import and add the Menu Component to the first page. It will look like:
-    ![img](InstructionsFinal/AddMenu.png)
+4. The first page will be a landing page with out a navbar, so for convenience, import and add the Menu Component to the first page. It will look like: 
+![[School/Fall2024/Writing/InstructionsFinal/AddMenu.png]]
+
 
 ### Step 2: Multiple Page Functionality 
 1. Follow Part 1, Step 3 to make "SecondComponent.tsx" and "ThirdComponent.tsx".
-3. Follow Step 4 to make "SecondPage.tsx", "ThirdPage.tsx" and "NotFoundPage.tsx"
-   ![img](InstructionsFinal/Filesss.png)
-5. Navigate to App.tsx
-6. Import SecondPage, ThirdPage, NotFoundPage and Menu Component
-   ![img](InstructionsFinal/imports.png)
+2. Follow Step 4 to make "SecondPage.tsx", "ThirdPage.tsx" and "NotFoundPage.tsx"
+![[School/Fall2024/Writing/InstructionsFinal/Filesss.png]]
+
+3. Navigate to App.tsx
+4. Import SecondPage, ThirdPage, NotFoundPage and Menu Component
+![[School/Fall2024/Writing/InstructionsFinal/imports.png]]
+
 
 ### Step 3: Construct React Browser Router
 *Note: Putting new content at different routes, adds functionality for multiple webpages.*'
 *Everything in Step 3 is in the App.tsx File*
 1. import in react-router-dom functions in App.tsx: 
-	* createBrowserRouter,*\
+	* createBrowserRouter
 	* RouterProvider
 	* Outlet
 	* Scroll Restoration
-![img](InstructionsFinal/importrrd.png)
+![[School/Fall2024/Writing/InstructionsFinal/importrrd.png]]
+
 2. Make function called Navbar wrapper outside of App function
 	* This function will be used to wrap all desired pages in a uniform format. In this case it will add the list from the Menu Component to the top. 
 	* Scroll restoration is a nice feature that ensures webpages go to the top when moving between links. 
-![img](InstructionsFinal/NavBarWrapper.png)
+![[School/Fall2024/Writing/InstructionsFinal/NavBarWrapper.png]]
+
 3. Create Browser Router: 
-![img](InstructionsFinal/BrowserRouterss.png)
+![[School/Fall2024/Writing/InstructionsFinal/BrowserRouterss.png]]
+
 *  The first element is a landing page, 
 * Everything under the NavbarWrapper in the "[ ]" will be wrapped in the function previously built. 
 * 
 4. Finally, to put this all together in the app function, remove what you previously put there and put this:
-![img](InstructionsFinal/AppFunction.png)
+![[School/Fall2024/Writing/InstructionsFinal/AppFunction.png]]
+
 * The path is the extension to the page. 
 * You will notice that the navbar is not on the first page. The way this is set up, there will be a default wrapper, in this case the nav component all pages except the first. 
 * The error element will show up if you navigate to a page the does not exist. 
@@ -181,14 +193,19 @@ This guide will be using TypeScript. TypeScript has become an industry standard.
 ## Conclusion
 ### Final Product
 * Home Page:
-	![img](InstructionsFinal/FinalFirstPage.png)
+	![[School/Fall2024/Writing/InstructionsFinal/FinalFirstPage.png]]
+	
 * Second Page:
-	![img](InstructionsFinal/FinalTwo.png)
+	![[School/Fall2024/Writing/InstructionsFinal/FinalTwo.png]]
+	
 * Third Page: 
-	![img](InstructionsFinal/FinalThree.png)
+	![[School/Fall2024/Writing/InstructionsFinal/FinalThree.png]]
+	
 * Not Found Page: 
-	* try typing a path in the search bar (like where the two is) that does not exist:
-   ![img](InstructionsFinal/NotFound.png)
+	* try typing a path in the search bar (like where the two is) that does not exist: 
+	![[School/Fall2024/Writing/InstructionsFinal/NotFound.png]]
+	
+	
 ### Other Concepts to explore:
 * Building pages with JSX/TSX
 	* Structure pages and fill with content.
